@@ -13,9 +13,6 @@ You can choose where to show the plugin(article or category). In addition, you c
 
 There are various themes you could use them to set your favorite appearance to the project.
 
-## No Support
-I make this project available free of charge to everyone in hope that it will be useful. However, I will not accept any feature requests, feature patches or support requests. Emails, GitHub Issues and Pull Requests containing any of these will be deleted / closed without reply. Thank you for your understanding.
-
 ## Main Features
 * "Egolt Like Plugin" for liking or disliking contents
 * "Egolt Like Module" for displaying top rated contents
@@ -33,6 +30,9 @@ I make this project available free of charge to everyone in hope that it will be
 
 ## Setup
 You can install this project by downloading the zip file of repository and then using the Joomla! extension manager available in the Joomla! Administrator Control Panel.
+
+## No Support
+I make this project available free of charge to everyone in hope that it will be useful. However, I will not accept any feature requests, feature patches or support requests. Emails, GitHub Issues and Pull Requests containing any of these will be deleted / closed without reply. Thank you for your understanding.
 
 ## Open Source License
 Egolt Like is an Open Source web-based project. It is in compliance with the GNU/GPL license:
