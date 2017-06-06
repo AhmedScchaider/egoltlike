@@ -1,7 +1,7 @@
 # Egolt Like
 ### Let the users like your contents!
 
-This is a small and smart Joomla! plugin which enable the users like your contents!
+This is a small and smart Joomla! extension which enable the users like your contents!
 
 Egolt Like is based on Ajax technology. It has many options that you can use to have it under your control and favorite way. Also it supports languages.
 
@@ -35,7 +35,6 @@ I make this project available free of charge to everyone in hope that it will be
 You can install this project by downloading the zip file of repository and then using the Joomla! extension manager available in the Joomla! Administrator Control Panel.
 
 ## Open Source License
-
 Egolt Like is an Open Source web-based project. It is in compliance with the GNU/GPL license:
 [GNU General Public License, version 2
 ](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
