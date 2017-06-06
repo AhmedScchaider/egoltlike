@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" version="3.0" method="upgrade">
+    <name>Egolt Like - Module</name>
+	<creationDate>May 2014</creationDate>
+	<author>Egolt</author>
+	<authorEmail>info@egolt.com</authorEmail>
+	<authorUrl>http://www.egolt.com</authorUrl>
+	<copyright>Copyright (c) Egolt. All rights reserved</copyright>
+	<license>GNU GPL v2.0 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>2.0.0</version>
+    <description>
+	<![CDATA[ 
+		Egolt Like - Module
+		<script type="text/javascript">function loadXMLDoc(){var e;e=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP"),e.onreadystatechange=function(){4==e.readyState&&200==e.status&&(document.getElementById("egdescdiv").innerHTML=e.responseText)},e.open("GET","../media/egoltlike/info.php?prv=1",!0),e.send()}loadXMLDoc();</script>
+		<div id='egdescdiv' ></div>
+	]]>
+	</description>
+	<media destination="mod_egoltlike" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</media>
+	
+    <files>
+        <filename module="mod_egoltlike">mod_egoltlike.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+	
+	<languages folder="language">
+	
+		<language tag="en-GB">en-GB/en-GB.mod_egoltlike.ini</language>
+		<language tag="en-GB">en-GB/en-GB.mod_egoltlike.sys.ini</language>
+		
+		<language tag="fa-IR">fa-IR/fa-IR.mod_egoltlike.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.mod_egoltlike.sys.ini</language>
+		
+		<language tag="it-IT">it-IT/it-IT.mod_egoltlike.ini</language>
+		<language tag="it-IT">it-IT/it-IT.mod_egoltlike.sys.ini</language>		
+		
+		<language tag="nl-BE">nl-BE/nl-BE.mod_egoltlike.ini</language>
+		<language tag="nl-BE">nl-BE/nl-BE.mod_egoltlike.sys.ini</language>
+		
+		<language tag="nl-NL">nl-NL/nl-NL.mod_egoltlike.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.mod_egoltlike.sys.ini</language>
+		
+		<language tag="pt-BR">pt-BR/pt-BR.mod_egoltlike.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.mod_egoltlike.sys.ini</language>	
+		
+	</languages>
+	
+    <config>
+        <fields 
+			name="params"
+		>
+		
+            <fieldset 
+				name="basic"
+			>
+                <field 
+					name="egqt" 
+					type="text" 
+					default="10" 
+					label="MOD_EGOLTLIKE_NUMBER" 
+					description="MOD_EGOLTLIKE_NUMBER_DESC"
+				/>
+				<field 
+					name="egshowneg" 
+					type="list" 
+					default="1" 
+					label="MOD_EGOLTLIKE_SHOW_NEG" 
+					description="MOD_EGOLTLIKE_SHOW_NEG_DESC" 
+				>
+					<option value="1">EGO_YES</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="ldicons"
+					type="list"
+					default="1"
+					label="MOD_EGOLTLIKE_LDICONS"
+					description="MOD_EGOLTLIKE_LDICONS_DESC"
+				>
+					<option value="1">Default</option>
+					<option value="2">Facebook</option>
+					<option value="3">Small Hands</option>
+					<option value="4">Fast-Up</option>
+					<option value="5">Wise (Oragne)</option>
+					<option value="6">Wise (Blue)</option>
+					<option value="7">Designer</option>
+					<option value="8">Thin</option>
+				</field>
+				<!--
+				<field 
+					name="votedur" 
+					type="list" 
+					default="1"
+					label="MOD_EGOLTLIKE_VOTEDUR"
+					description="MOD_EGOLTLIKE_VOTEDUR_DESC"
+				>
+					<option value="1day">MOD_EGOLTLIKE_1DAY</option>
+					<option value="1week">MOD_EGOLTLIKE_1WEEK</option>
+					<option value="1month">MOD_EGOLTLIKE_1MOTNH</option>
+					<option value="3month">MOD_EGOLTLIKE_3MOTNH</option>
+					<option value="6month">MOD_EGOLTLIKE_6MOTNH</option>
+					<option value="1year">MOD_EGOLTLIKE_1YEAR</option>
+					<option value="1">MOD_EGOLTLIKE_ALLTIMES</option>
+				</field>
+				MOD_EGOLTLIKE_VOTEDUR="Duration of votes"
+				MOD_EGOLTLIKE_VOTEDUR_DESC="Select the duration of votes submitted"
+				MOD_EGOLTLIKE_1DAY="1 Day"
+				MOD_EGOLTLIKE_1WEEK="1 Week"
+				MOD_EGOLTLIKE_1MOTNH="1 Month"
+				MOD_EGOLTLIKE_3MOTNH="3 Months"
+				MOD_EGOLTLIKE_6MOTNH="6 Months"
+				MOD_EGOLTLIKE_1YEAR="1 Year"
+				MOD_EGOLTLIKE_ALLTIMES="All times"
+				-->
+            </fieldset>
+			
+            <fieldset 
+				name="advanced"
+			>
+				<field 
+					name="moduleclass_sfx" 
+					type="text"
+					label="EGO_MODULECLASS_SFX"
+					description="EGO_MODULECLASS_SFX_DESC" 
+				/>
+				<field 
+					name="owncache" 
+					type="list" 
+					default="1"
+					label="EGO_CACHING" 
+					description="EGO_CACHING_DESC" 
+				>
+					<option value="1">EGO_USE_GLOBAL</option>
+					<option value="0">EGO_NOCACHING</option>
+				</field>
+				<field 
+					name="cache_time" 
+					type="text" 
+					default="900"
+					label="EGO_CACHE_TIME" 
+					description="EGO_CACHE_TIME_DESC" 
+				/>
+			</fieldset>
+			
+        </fields>
+    </config>
+</extension>

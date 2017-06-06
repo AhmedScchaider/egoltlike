@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_EGOLTLIKE</name>
+	<creationDate>May 2014</creationDate>
+	<author>Egolt</author>
+	<authorEmail>info@egolt.com</authorEmail>
+	<authorUrl>http://www.egolt.com</authorUrl>
+	<copyright>Copyright (c) Egolt. All rights reserved</copyright>
+	<license>GNU GPL v2.0 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>2.0.0</version>
+	<description>
+	<![CDATA[ 
+		Egolt Like - Content Plugin
+		<script type="text/javascript">function loadXMLDoc(){var e;e=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP"),e.onreadystatechange=function(){4==e.readyState&&200==e.status&&(document.getElementById("egdescdiv").innerHTML=e.responseText)},e.open("GET","../media/egoltlike/info.php?prv=1",!0),e.send()}loadXMLDoc();</script>
+		<div id='egdescdiv' ></div>
+	]]>
+	</description>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<update> 
+			<schemas> 
+					<schemapath type="mysql">sql/updates</schemapath> 
+			</schemas> 
+	</update>
+	
+	<media destination="egoltlike" folder="media">
+		<filename>index.html</filename>
+		<filename>intro.txt</filename>
+		<filename>info.php</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</media>
+	
+	<languages folder="language">
+	
+		<language tag="en-GB">en-GB/en-GB.plg_content_egoltlike.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_egoltlike.sys.ini</language>
+		
+		<language tag="fa-IR">fa-IR/fa-IR.plg_content_egoltlike.ini</language>
+		<language tag="fa-IR">fa-IR/fa-IR.plg_content_egoltlike.sys.ini</language>
+		
+		<language tag="it-IT">it-IT/it-IT.plg_content_egoltlike.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_content_egoltlike.sys.ini</language>		
+		
+		<language tag="nl-BE">nl-BE/nl-BE.plg_content_egoltlike.ini</language>
+		<language tag="nl-BE">nl-BE/nl-BE.plg_content_egoltlike.sys.ini</language>
+		
+		<language tag="nl-NL">nl-NL/nl-NL.plg_content_egoltlike.ini</language>
+		<language tag="nl-NL">nl-NL/nl-NL.plg_content_egoltlike.sys.ini</language>
+		
+		<language tag="pt-BR">pt-BR/pt-BR.plg_content_egoltlike.ini</language>
+		<language tag="pt-BR">pt-BR/pt-BR.plg_content_egoltlike.sys.ini</language>	
+		
+	</languages>
+	
+	<files>
+		<filename plugin="egoltlike">egoltlike.php</filename>
+		<filename>egoltlike_ajax.php</filename>
+		<filename>script.php</filename>
+		<filename>index.html</filename>
+		<folder>sql</folder>
+	</files>
+	
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field 
+					name="regonly" 
+					type="radio" 
+					default="0" 
+					class="btn-group btn-group-yesno"
+					label="PLG_CONTENT_EGOLTLIKE_REGONLY" 
+					description="PLG_CONTENT_EGOLTLIKE_REGONLY_DESC" 
+				>					
+					<option value="1">EGO_YES</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="showincat" 
+					type="radio" 
+					default="1"
+					class="btn-group btn-group-yesno"
+					label="PLG_CONTENT_EGOLTLIKE_SHOWINCAT"
+					description="PLG_CONTENT_EGOLTLIKE_SHOWINCAT_DESC"
+				>
+					<option value="1">EGO_YES</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="showinart" 
+					type="radio" 
+					default="1"
+					class="btn-group btn-group-yesno"
+					label="PLG_CONTENT_EGOLTLIKE_SHOWINART"
+					description="PLG_CONTENT_EGOLTLIKE_SHOWINART_DESC"
+				>
+					<option value="1">EGO_YES</option>
+					<option value="0">EGO_NO</option>
+				</field>
+				<field 
+					name="pos_show"
+					type="radio"
+					default="beforec"
+					class="btn-group"
+					label="PLG_CONTENT_EGOLTLIKE_PLG_POSITION"
+					description="PLG_CONTENT_EGOLTLIKE_PLG_POSITION_DESC"
+				>
+					<option value="beforec">PLG_CONTENT_EGOLTLIKE_BEFORE_CONTENT</option>
+					<option value="afterc">PLG_CONTENT_EGOLTLIKE_AFTER_CONTENT</option>
+				</field>
+				<field 
+					name="alignment"
+					type="radio"
+					default="right"
+					class="btn-group"
+					label="PLG_CONTENT_EGOLTLIKE_ALIGNMENT"
+					description="PLG_CONTENT_EGOLTLIKE_ALIGNMENT_DESC"
+				>
+					<option value="left">PLG_CONTENT_EGOLTLIKE_LEFT</option>
+					<option value="center">PLG_CONTENT_EGOLTLIKE_CENTER</option>
+					<option value="right">PLG_CONTENT_EGOLTLIKE_RIGHT</option>
+				</field>
+				<field 
+					name="ldicons"
+					type="list"
+					default="1"
+					label="PLG_CONTENT_EGOLTLIKE_THEME"
+					description="PLG_CONTENT_EGOLTLIKE_THEME_DESC"
+				>
+					<option value="1">Default</option>
+					<option value="2">Facebook</option>
+					<option value="3">Small Hands</option>
+					<option value="4">Fast-Up</option>
+					<option value="5">Wise (Oragne)</option>
+					<option value="6">Wise (Blue)</option>
+					<option value="7">Designer</option>
+					<option value="8">Thin</option>
+				</field>				
+				<field 
+					name="sval_show" 
+					type="radio"
+					default="1"
+					class="btn-group btn-group-yesno"
+					label="PLG_CONTENT_EGOLTLIKE_LIKEDIS_NO"
+					description="PLG_CONTENT_EGOLTLIKE_LIKEDIS_NO_DESC"
+				>
+					<option value="1">PLG_CONTENT_EGOLTLIKE_SHOW</option>
+					<option value="0">PLG_CONTENT_EGOLTLIKE_HIDE</option>
+				</field>
+				<field 
+					name="zval_show" 
+					type="radio"
+					default="0"
+					class="btn-group btn-group-yesno"
+					label="PLG_CONTENT_EGOLTLIKE_ZERO_VAL"
+					description="PLG_CONTENT_EGOLTLIKE_ZERO_VAL_DESC"
+				>
+					<option value="1">PLG_CONTENT_EGOLTLIKE_SHOW</option>
+					<option value="0">PLG_CONTENT_EGOLTLIKE_HIDE</option>
+				</field>
+				<field 
+					name="voteagain" 
+					type="list" 
+					default="-1"
+					label="PLG_CONTENT_EGOLTLIKE_VOTEAGAIN"
+					description="PLG_CONTENT_EGOLTLIKE_VOTEAGAIN_DESC"
+				>
+					<option value="1">PLG_CONTENT_EGOLTLIKE_ALWAYS</option>
+					<option value="1day">PLG_CONTENT_EGOLTLIKE_AF_1DAY</option>
+					<option value="1week">PLG_CONTENT_EGOLTLIKE_AF_1WEEK</option>
+					<option value="1month">PLG_CONTENT_EGOLTLIKE_AF_1MOTNH</option>
+					<option value="3month">PLG_CONTENT_EGOLTLIKE_AF_3MOTNH</option>
+					<option value="6month">PLG_CONTENT_EGOLTLIKE_AF_6MOTNH</option>
+					<option value="1year">PLG_CONTENT_EGOLTLIKE_AF_1YEAR</option>
+					<option value="-1">PLG_CONTENT_EGOLTLIKE_NEVER</option>
+				</field>
+				<field 
+					name="encats" 
+					type="category" 
+					extension="com_content" 
+					multiple="multiple" 
+					label="PLG_CONTENT_EGOLTLIKE_ENCATS" 
+					description="PLG_CONTENT_EGOLTLIKE_ENCATS_DESC" 
+				/>
+				<field 
+					name="discats" 
+					type="category" 
+					extension="com_content" 
+					multiple="multiple" 
+					label="PLG_CONTENT_EGOLTLIKE_DISCATS" 
+					description="PLG_CONTENT_EGOLTLIKE_DISCATS_DESC" 
+				/>
+				<field 
+					name="disarts" 
+					type="sql" 
+					query="SELECT id, title FROM #__content" 
+					key_field="id" 
+					value_field="title"
+					multiple="multiple" 
+					label="PLG_CONTENT_EGOLTLIKE_DISARTS" 
+					description="PLG_CONTENT_EGOLTLIKE_DISARTS_DESC"
+				/>
+			</fieldset>
+			
+		</fields>
+	</config>
+	<scriptfile>script.php</scriptfile>
+</extension>

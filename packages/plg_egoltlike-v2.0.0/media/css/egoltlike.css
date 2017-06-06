@@ -1,0 +1,84 @@
+/* grid builder */
+.egoltlike.egalign-right {
+	text-align: right;
+}
+.egoltlike.egalign-center {
+	text-align: center;
+}
+.egoltlike.egalign-left {
+	text-align: left;
+}
+.egoltlike.egalign-center .eglike_act {
+	width: 130px;
+	margin: auto;
+}
+.egoltlike.egalign-right .grid {
+	display: inline;
+	float: right;
+}
+.egoltlike.egalign-left .grid {
+	display: inline;
+	float: left;
+}
+.egoltlike.egalign-center .grid {
+	display: inline;
+	float: left;
+}
+.egoltlike .clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.egoltlike {
+	padding: 5px 0;
+}
+.egoltlike .esum {
+	background-color: #616161;
+	color: #FFFFFF;
+	border: 1px solid #616161;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	height: 14px;
+	line-height: 14px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: auto 8px;
+}
+.egoltlike .esum img{
+	margin-top:2px;
+}
+.egoltlike .elike a:hover, 
+.egoltlike .edislike a:hover {
+	text-decoration: none !important;
+	background: none !important;
+}
+.egoltlike .elike_val {
+	margin-left: 4px;
+	color: #0b7426;
+	font-size: 70%;
+}
+.egoltlike .edislike_val {
+	margin-right: 4px;
+	color: #c21226;
+	font-size: 70%;
+}
+.egoltlike .pos {
+	color: #ccffd9;
+}
+.egoltlike .neg {
+	color: #ffcccc;
+}
+.egoltlike a,
+.egoltlike a:hover,
+.egoltlike a:active,
+.egoltlike a:focus
+{
+	border:0 !important;
+}
+.eloading {
+	margin-right: 6px;
+}

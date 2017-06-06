@@ -1,0 +1,19 @@
+This is a small and smart plugin which enable the users like your contents!
+
+This product is fully free(including the download and updates). On the other hand, you can buy a subscription and get support and fast bug fixing (excluding javascript conflicts).
+
+★ Key features
+- ✔ "Egolt Like Plugin" for liking or disliking contents
+- ✔ "Egolt Like Module" for displaying top rated contents
+- ✔ Restrict to "Registered users only" option
+- ✔ Display in "category" or "article" view
+- ✔ Disable / Enable in chosen categories
+- ✔ Disable in chosen articles
+- ✔ Position (before or after content)
+- ✔ Alignment (left, center or right)
+- ✔ Duration for voting again by visitors
+- ✔ Ajax Technology
+- ✔ 8 Beautiful Themes
+- ✔ Automatic Updates
+- ✔ No Hidden Links
+- ✔ Support available for subscribers

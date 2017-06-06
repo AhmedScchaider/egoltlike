@@ -1,0 +1,25 @@
+/**
+ * @package   	Egolt Like
+ * @link 		http://www.egolt.com
+ * @copyright 	Copyright (C) Egolt - www.egolt.com
+ * @author    	Soheil Novinfard
+ * @license    	GNU/GPL 2
+ *
+ * Name:		Egolt Like
+ * License:		GNU/GPL 2
+ * Product:		http://www.egolt.com/products/egoltlike
+ */
+ 
+.eglikemod, .eglikemod input, .eglikemod select {
+	font-family: Tahoma, Arial;
+}
+.eglikemod ul li{
+	background-position: 99% center;
+	padding-left: 0;
+	padding-right: 30px;
+}
+.eglikemod ul li span { 
+	float: right;
+	padding-right: 0;
+	padding-left: 8px;
+}

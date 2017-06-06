@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>Egolt Like</name>
+	<author>Egolt</author>
+	<creationDate>November 2015</creationDate>
+	<packagename>egoltlike</packagename>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.0.1</version>
+	<url>http://www.egolt.com</url>
+	<packager>Egolt</packager>
+	<packagerurl>http://www.egolt.com</packagerurl>
+	<description>	
+	<![CDATA[ 
+		<script type="text/javascript">function loadXMLDoc(){var e;e=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP"),e.onreadystatechange=function(){4==e.readyState&&200==e.status&&(document.getElementById("egdescdiv").innerHTML=e.responseText)},e.open("GET","../media/egoltlike/info.php?prv=1",!0),e.send()}loadXMLDoc();</script>
+		<div id='egdescdiv' ></div>
+	]]>
+	</description>
+	<files folder="packages">
+		<file type="plugin" id="egoltupdate" group="system" client="admin" >plg_egoltupdate-v2.2.zip</file>
+
+		<file type="plugin" id="egoltlike" group="content" client="site" >plg_egoltlike-v2.0.0.zip</file>
+		<file type="module" id="mod_egoltlike" client="site" >mod_egoltlike-v2.0.0.zip</file>
+		
+	</files>
+	<updateservers>
+	   <server type="extension" priority="1" name="Egolt Like Update Center">http://www.egolt.com/egolt_update.php?pr=egoltlike&amp;ext=.xml</server>
+	</updateservers>
+	<scriptfile>script.php</scriptfile>
+</extension>

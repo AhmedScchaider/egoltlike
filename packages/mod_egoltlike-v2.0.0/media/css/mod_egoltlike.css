@@ -1,0 +1,68 @@
+/**
+ * @package   	Egolt Like
+ * @link 		http://www.egolt.com
+ * @copyright 	Copyright (C) Egolt - www.egolt.com
+ * @author    	Soheil Novinfard
+ * @license    	GNU/GPL 2
+ *
+ * Name:		Egolt Like
+ * License:		GNU/GPL 2
+ * Product:		http://www.egolt.com/products/egoltlike
+ */
+ 
+.eglikemod a, 
+.eglikemod a:hover,
+.eglikemod a:focus {
+	text-decoration: none !important;
+}
+.eglikemod a {
+	color: #000 !important;
+}
+.eglikemod a:hover,
+.eglikemod a:focus {
+	background-color: transparent !important;
+	color: blue !important;
+}
+.eglikemod ul{
+	margin: 0px !important;
+	border: solid 0px #eee;
+	list-style: none;
+}
+.eglikemod ul li{
+	background-repeat: no-repeat;
+	background-position: 2px center;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 30px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ddd;
+	font-size: 15px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.eglikemod ul li.posnum,
+.eglikemod ul li.nutnum {
+	background-image: url(../images/like.png);
+}
+.eglikemod ul li.negnum{
+	background-image: url(../images/dislike.png);
+}
+.eglikemod ul li span {
+	font-size: 12px;
+	float: right;
+	padding-right: 8px;
+}
+.eglikemod ul li.posnum span {
+	color: green;
+}
+.eglikemod ul li.negnum span {
+	color: red;
+}
+.eglikemod ul li a {
+	width: 100%;
+	display: block;
+}
+.eglikemod ul li:hover,
+.eglikemod ul li:focus {
+	background-color: #eee;
+}
