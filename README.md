@@ -1,7 +1,7 @@
 # Egolt Like
 ### Let the users like your contents!
 
-This is a small and smart plugin which enable the users like your contents!
+This is a small and smart Joomla! plugin which enable the users like your contents!
 
 Egolt Like is based on Ajax technology. It has many options that you can use to have it under your control and favorite way. Also it supports languages.
 
